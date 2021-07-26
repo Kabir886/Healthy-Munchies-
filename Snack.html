@@ -2,61 +2,90 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
-  margin: 0;
-  background-color: #f1f1f1;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#navbar {
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: block;
-  transition: top 0.3s;
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
 }
 
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  display: block;
 }
 
-#navbar a:hover {
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
   background-color: #ddd;
   color: black;
+}
+
+.active {
+  background-color: hsl(234, 93%, 47%);
+  color: white;
 }
 </style>
 </head>
 <body>
 
-<div id="navbar">
-    <a href="index.html" class="w3-bar-item w3-button">Home</a>
-    <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="index.html" class="active">Home</a>
+  <div id="myLinks">
     <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
     <a href="juice.html" class="w3-bar-item w3-button">Fresh Juices</a>
     <a href="shakes.html" class="w3-bar-item w3-button">Shakes</a>
     <a href="Blend.html" class="w3-bar-item w3-button">House Blends</a>
     <a href="Snack.html" class="w3-bar-item w3-button">Snacks</a>
     <a href="tooth.html" class="w3-bar-item w3-button">Sweet Tooth</a>
-</div>
-<div id="menu" class="w3-container w3-black w3-xxlarge w3-padding-64">
+  </div>
+  <div class="w3-row w3-center w3-border w3-border-dark-grey">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Century Gothic", sans-serif}
+</style>
+<body>
 
-    <div class="w3-row w3-center w3-border w3-border-dark-grey">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
-    <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Century Gothic", sans-serif}
-    </style>
-    <body>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
     
 
 <div style="padding:15px 15px 95px;font-size:30px;margin-top:30px;">
@@ -64,41 +93,49 @@ body {
     <div class="w3-container w3-white w3-padding-32">
     <h1><b>WHEAT PURI</b> <span class="w3-tag w3-grey w3-round"></span>
     <span class="w3-right w3-tag w3-dark-grey w3-round">3.000 OMR/ KG</span></h1>
-    <p class="w3-text-grey">This is a indian food generally eaten as break fast or as a light meal. Puri in english meaning is deep fried bread</p>
-    <img src="https://www.whiskaffair.com/wp-content/uploads/2015/10/Poori-1-3.jpg" style="width: 30%" alt="Orange Juices">
+    <p class="w3-text-grey"></p>
+    <img src="https://www.whiskaffair.com/wp-content/uploads/2015/10/Poori-1-3.jpg" style="width: 70%" alt="Orange Juices">
     <hr>
     <h1><b>POHA CHIVDA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.500 OMR/ KG</span></h1>
-    <p class="w3-text-grey">This is a Maharashtrian style quick and tasty dry snack made from thin poha (flattened rice)</p>
-    <img src="https://cdn.cdnparenting.com/articles/2020/02/26165411/Roasted-Poha-Chivda-Recipe.jpg" style="width: 30%" alt="Orange Juices">
-    <hr>
-    <h1><b>CORN (makai) chivda</b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.000 OMR/ KG</span></h1>
     <p class="w3-text-grey"></p>
-    <img src="https://i2.wp.com/www.rasoimenu.com/wp-content/uploads/2017/04/Corn-Flakes-Chivda-recipe-by-rasoi-menu.jpg?fit=1280%2C660&ssl=1" style="width: 30%" alt="Orange Juices">
+    <img src="https://cdn.cdnparenting.com/articles/2020/02/26165411/Roasted-Poha-Chivda-Recipe.jpg" style="width: 70%" alt="Orange Juices">
     <hr>
-    <h1><b>CHAKLI </b> <span class="w3-right w3-tag w3-dark-grey w3-round">4.500 OMR/ KG</span></h1>
-    <p class="w3-text-grey">It is a spiral shaped snack with a spiked surface</p>
-    <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2014/10/chakli-3.jpg" style="width: 30%" alt="Orange Juices">
+    <h1><b>CORN chivda</b> <span class="w3-right w3-tag w3-dark-grey w3-round"> 3.000 OMR/ KG</span></h1>
+    <p class="w3-text-grey"></p>
+    <img src="https://i2.wp.com/www.rasoimenu.com/wp-content/uploads/2017/04/Corn-Flakes-Chivda-recipe-by-rasoi-menu.jpg?fit=1280%2C660&ssl=1" style="width: 70%" alt="Orange Juices">
+    <hr>
+    <h1><b>CHAKLI </b> <span class="w3-right w3-tag w3-dark-grey w3-round" > 4.500 OMR/ KG</span></h1>
+    <p class="w3-text-grey"></p>
+    <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2014/10/chakli-3.jpg" style="width: 70%" alt="Orange Juices">
     <hr>
     <h1><b>Gathiya BESAN </b> <span class="w3-right w3-tag w3-dark-grey w3-round">3.500 OMR/ KG</span></h1>
-    <p class="w3-text-grey">Dish of Gramflour</p>
-    <img src="https://www.nehascookbook.com/wp-content/uploads/2020/05/Papadi-ghathiya-WS.jpg" style="width: 30%" alt="Orange Juices">
+    <p class="w3-text-grey"></p>
+    <img src="https://www.nehascookbook.com/wp-content/uploads/2020/05/Papadi-ghathiya-WS.jpg" style="width: 70%" alt="Orange Juices">
     <hr>
     </div>
 
 </div>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<!-- End smartphone / tablet look -->
+</div>
 
 <script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    x.style.display = "block";
   }
-  prevScrollpos = currentScrollPos;
 }
 </script>
 
 </body>
 </html>
+
+
